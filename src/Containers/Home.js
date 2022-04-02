@@ -25,7 +25,7 @@ function Home() {
   };
   return (
     <ScrollComponent cb={nextApi} hasData={data?.trending?.length}>
-      <div className="grid grid-cols-4 lg:grid-cols-6 gap-6 mt-4 p-2">
+      <div className="grid grid-cols-4  gap-6 mt-4 p-2">
         {data?.trending?.map((gifs) => (
           <GifComponent
             key={gifs.id}
