@@ -1,4 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-light {
+  --primary: #f8f8f8;
+  --secondary: #dbe1e8;
+  --text-main: #0d0106;
+  --text-secondary: #454e56;
+  --accent: #009ffd;
+}
+.theme-dark {
+  --primary: #12181b;
+  --secondary: #2a2e35;
+  --text-main: #eaeaea;
+  --text-secondary: #b8b8b9;
+  --accent: #fc7753;
+}
+
+.loader div {
+  animation-duration: 0.5s;
+}
+
+.loader div:first-child {
+  animation-delay: 0.1s;
+}
+
+.loader div:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loader div:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
 .App {
+  min-height: 100vh;
   text-align: center;
 }
 
