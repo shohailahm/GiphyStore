@@ -7,8 +7,7 @@ import GifComponent from "./../Components/GifComponent";
 
 function Search() {
   const [val, setVal] = useState("");
-  const [setSearch, { loading, error, data, fetchMore }] =
-    useLazyQuery(SearchQuery);
+  const [setSearch, { data, fetchMore }] = useLazyQuery(SearchQuery);
 
   const callApi = (e) => {
     setVal(e.target.value);

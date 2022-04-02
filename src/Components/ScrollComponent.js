@@ -11,7 +11,7 @@ function ScrollComponent({ children, cb, hasData }) {
   useEffect(() => {
     //load next page when bottom is visible
     isBottomVisible && cb();
-  }, [isBottomVisible]);
+  }, [isBottomVisible, cb]);
   return (
     <>
       {children}

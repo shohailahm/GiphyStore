@@ -15,7 +15,7 @@ const useIntersectionObserver = (ref, options) => {
     return () => {
       observer.unobserve(current);
     };
-  }, []);
+  }, [options, ref]);
 
   return isIntersecting;
 };
